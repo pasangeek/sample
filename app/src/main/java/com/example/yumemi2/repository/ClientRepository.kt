@@ -25,7 +25,7 @@ class ClientRepository @Inject constructor(
         var clientData: Item? = null
         val response = repoResultApiService.getRepoDetails(query)
         if (response.isSuccessful) {
-            clientData = response.body()
+          //  clientData = response.body()
         }
 
         return clientData
