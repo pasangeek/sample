@@ -23,7 +23,7 @@ class RepositoryDetailsViewModel @Inject constructor (
     fun getRepoInfo(){
 
         viewModelScope.launch {
-            val repoInfo = clientRepository.getRepoDataFromDataSource()
+            val repoInfo = clientRepository.getClientDataFromDataSource("q")
             _repoData.value = repoInfo
 
         }
